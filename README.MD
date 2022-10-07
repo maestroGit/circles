@@ -1,6 +1,26 @@
-# Foobar
+## Geometría
+# Circulo
+En el canvas utilizamos radianes como unidad de medida de ángulos.
+Un circulo completo tiene 2π radianes.
+En grados: 360° = 2π rad;
+En javaScript: 2*Math.PI;
+(The Math.PI property represents the ratio of the circumference of a circle to its diameter, approximately 3.14159)
 
-Foobar is a Python library for dealing with word pluralization.
+Para convertir grados sexagesimales a radianes utilizamos la siguiente fórmula:
+radianes = (π / 180) * grados;
+
+Pasar  grados sexagesimales a radianes en javaScript:
+var radianes = (Math.PI / 180) * grados;
+
+# arco
+Para dibujar un arco utilizamos el método arc(x, y, r, ap, af, aC), donde
+- x e y son las coordenadas del centro,
+- ap es el ángulo de partida ( en radianes ),
+- af es el ángulo final ( en radianes ), y
+- cR ( contra reloj ) es la dirección.
+El parametro cR puede tomar dos valores:
+- true ( verdadero, o sea: en sentido contrario al de las agujas del reloj ) y
+- false ( falso, o sea: en el sentido de las agujas del reloj ).
 
 ## Installation
 git init
@@ -17,7 +37,7 @@ Ver diferencias entre archivos añadidos y los cambios que aún no están con:
      git diff
 
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+
 
 ```bash
 pip install foobar
@@ -25,8 +45,8 @@ pip install foobar
 
 ## Usage
 
-```python
-import foobar
+```Vanilla javaScript
+imp
 
 # returns 'words'
 foobar.pluralize('word')
@@ -43,5 +63,6 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 Please make sure to update tests as appropriate.
 
-## License
+## Fuente
+[font](http://w3.unpocodetodo.info/canvas/arc.php)
 [MIT](https://choosealicense.com/licenses/mit/)
