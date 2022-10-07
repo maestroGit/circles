@@ -1,0 +1,37 @@
+    /* Box sizing rules */
+    
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+    /* Remove default margin */
+    
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    p,
+    figure,
+    blockquote,
+    dl,
+    dd {
+        margin: 0;
+    }
+    
+    .container {
+        background: peru;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #upcanvas {
+        border: 2px solid rgba(0, 0, 255, .5);
+        background: white;
+    }
+    
+    #downcanvas {
+        background: white;
+    }
